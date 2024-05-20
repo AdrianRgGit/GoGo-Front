@@ -22,11 +22,10 @@ const config: Config = {
       },
 
       colors: {
-        white: "#FEFAF6",
-        cream: "#EADBC8",
-        gold: "#FFC94A",
-        blue: "#102C57",
-        gray: "#33363F",
+        white: "#F5F7F8",
+        yellow: "#F4CE14",
+        "dark-green": "#495E57",
+        gray: "#45474B",
       },
     },
   },
