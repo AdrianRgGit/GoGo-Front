@@ -15,8 +15,19 @@ const config: Config = {
       },
 
       fontFamily: {
-        
-      }
+        "lato-light": ["Lato-Light", "sans-serif"],
+        "lato-bold": ["Lato-Bold", "sans-serif"],
+        "lato-black": ["Lato-Black", "sans-serif"],
+        "lato-italic": ["Lato-Italic", "sans-serif"],
+      },
+
+      colors: {
+        white: "#FEFAF6",
+        cream: "#EADBC8",
+        gold: "#FFC94A",
+        blue: "#102C57",
+        gray: "#33363F",
+      },
     },
   },
   plugins: [],
