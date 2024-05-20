@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import SideNav from "@/components/SideNav/SideNav";
 
 export const metadata: Metadata = {
   title: "GoGo",
@@ -13,7 +14,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="flex">
+        <div className="bg-dark-green w-1/5 h-screen fixed top-0 left-0 flex flex-col items-center py-4 justify-between p-6">
+          <h1 className="text-4xl">GoGo</h1>
+          <SideNav />
+        </div>
+        <main className="ml-[20%] flex-grow p-4">{children}</main>
+      </body>
     </html>
   );
 }
