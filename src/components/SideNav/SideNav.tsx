@@ -21,9 +21,9 @@ const SideNav = ({ isExpanded, setIsExpanded }: sideNavProps) => {
     <aside
       className={`fixed left-0 top-0 flex h-screen ${isExpanded ? "w-1/5" : "w-24"} flex-col items-center justify-between bg-dark-green p-6 py-4 transition-all duration-150`}
     >
-      <header className="mb-4 flex w-full flex-col items-center justify-center">
+      <header className="mb-4 flex h-32 w-full flex-col items-center justify-center">
         {isExpanded ? (
-          <img src="/images/2.png" alt="company logo" width={120} />
+          <img src="/images/2.png" alt="company logo" />
         ) : (
           <>
             <h1 className="font-lato-bold text-lg">GOGO</h1>
@@ -32,7 +32,9 @@ const SideNav = ({ isExpanded, setIsExpanded }: sideNavProps) => {
         )}
       </header>
 
-      <nav className="flex w-full flex-col justify-center gap-y-10">
+      <nav
+        className={`flex w-full flex-col justify-center gap-y-10 ${!isExpanded && "items-center"}`}
+      >
         <TabNav href="#" icon={<Home size={28} />} expanded={isExpanded}>
           INICIO
         </TabNav>
