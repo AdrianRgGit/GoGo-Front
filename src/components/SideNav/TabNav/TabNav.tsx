@@ -1,4 +1,4 @@
-import { tabNavProps } from "@/types/sideNav/sideNavTypes";
+import { tabNavProps } from "@/types/sideNavTypes";
 import React from "react";
 
 const TabNav = ({ href, icon, children, expanded }: tabNavProps) => {

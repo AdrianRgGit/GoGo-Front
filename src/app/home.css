@@ -1,0 +1,9 @@
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "weekly-sales weekly-income monthly-summary"
+    "weekly-orders weekly-orders expenses";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 12px;
+}

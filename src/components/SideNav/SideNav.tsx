@@ -23,7 +23,10 @@ const SideNav = ({ isExpanded, setIsExpanded }: sideNavProps) => {
     >
       <header className="mb-4 flex h-32 w-full flex-col items-center justify-center">
         {isExpanded ? (
-          <img src="/images/2.png" alt="company logo" />
+          <>
+            <h1 className="font-lato-bold text-lg">GOGO</h1>
+            <small className="text-xs">DELIVERY</small>
+          </>
         ) : (
           <>
             <h1 className="font-lato-bold text-lg">GOGO</h1>

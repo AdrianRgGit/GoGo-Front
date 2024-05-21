@@ -1,4 +1,4 @@
-import { profileNavProps } from "@/types/sideNav/sideNavTypes";
+import { profileNavProps } from "@/types/sideNavTypes";
 import React from "react";
 
 const ProfileNav = ({ expanded }: profileNavProps) => {
