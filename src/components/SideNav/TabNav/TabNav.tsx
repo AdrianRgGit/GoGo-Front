@@ -1,14 +1,14 @@
 import { tabNavProps } from "@/types/sideNav/sideNavTypes";
 import React from "react";
 
-const TabNav = ({ children, href, icon }: tabNavProps) => {
+const TabNav = ({ href, icon, children, expanded }: tabNavProps) => {
   return (
     <a
-      className="flex flex-grow items-center gap-x-4 py-2 transition-colors duration-200 hover:text-yellow"
       href={href}
+      className="flex items-center gap-x-4 text-white transition-colors duration-200 hover:text-yellow"
     >
       {icon}
-      <p>{children}</p>
+      {expanded && <span>{children}</span>}
     </a>
   );
 };

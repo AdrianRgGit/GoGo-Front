@@ -15,10 +15,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex">
-        <div className="fixed left-0 top-0 flex h-screen w-1/5 flex-col items-center justify-between bg-dark-green p-6 py-4">
-          <h1 className="text-4xl">GoGo</h1>
-          <SideNav />
-        </div>
+        <SideNav />
+
         <main className="ml-[20%] flex-grow p-4">{children}</main>
       </body>
     </html>

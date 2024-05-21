@@ -1,31 +1,69 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import ProfileNav from "./ProfileNav/ProfileNav";
 import TabNav from "./TabNav/TabNav";
-import { Bell, HelpCircle, Home, PanelBottom, Wrench } from "lucide-react";
+import {
+  Bell,
+  ChevronLeft,
+  ChevronRight,
+  HelpCircle,
+  Home,
+  PanelBottom,
+  Wrench,
+} from "lucide-react";
 
 const SideNav = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   return (
-    <>
-      <nav className="flex w-full flex-col justify-center gap-y-10 bg-red-500">
-        <TabNav href="#" icon={<Home size={28} />}>
+    <aside
+      className={`fixed left-0 top-0 flex h-screen ${isExpanded ? "w-1/5" : "w-24"} flex-col items-center justify-between bg-dark-green p-6 py-4 transition-all duration-150`}
+    >
+      <header className="mb-4 flex w-full flex-col items-center justify-center">
+        {isExpanded ? (
+          <img src="/images/2.png" alt="company logo" width={120} />
+        ) : (
+          <>
+            <h1 className="text-lg font-lato-bold">GOGO</h1>
+            <small className="text-xs">DELIVERY</small>
+          </>
+        )}
+      </header>
+
+      <nav className="flex w-full flex-col justify-center gap-y-10">
+        <TabNav href="#" icon={<Home size={28} />} expanded={isExpanded}>
           INICIO
         </TabNav>
-        <TabNav href="#" icon={<PanelBottom size={28} />}>
+        <TabNav href="#" icon={<PanelBottom size={28} />} expanded={isExpanded}>
           PANEL DE CONTROL
         </TabNav>
-        <TabNav href="#" icon={<Wrench size={28} />}>
+        <TabNav href="#" icon={<Wrench size={28} />} expanded={isExpanded}>
           FUNCIONALIDADES
         </TabNav>
-        <TabNav href="#" icon={<Bell size={28} />}>
+        <TabNav href="#" icon={<Bell size={28} />} expanded={isExpanded}>
           NOTIFICACIONES
         </TabNav>
-        <TabNav href="#" icon={<HelpCircle size={28} />}>
+        <TabNav href="#" icon={<HelpCircle size={28} />} expanded={isExpanded}>
           SOPORTE
         </TabNav>
       </nav>
 
-      <ProfileNav />
-    </>
+      <button
+        onClick={toggleExpand}
+        className="absolute left-full top-1/2 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-dark-green p-2 text-white"
+      >
+        {isExpanded ? <ChevronLeft /> : <ChevronRight />}
+      </button>
+
+      <footer className="w-full">
+        <ProfileNav expanded={isExpanded} />
+      </footer>
+    </aside>
   );
 };
 
