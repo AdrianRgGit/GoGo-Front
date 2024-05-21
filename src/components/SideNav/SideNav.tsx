@@ -1,6 +1,4 @@
-"use client";
-
-import React, { useState } from "react";
+import React from "react";
 import ProfileNav from "./ProfileNav/ProfileNav";
 import TabNav from "./TabNav/TabNav";
 import {
@@ -12,10 +10,9 @@ import {
   PanelBottom,
   Wrench,
 } from "lucide-react";
+import { sideNavProps } from "@/types/sideNav/sideNavTypes";
 
-const SideNav = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
-
+const SideNav = ({ isExpanded, setIsExpanded }: sideNavProps) => {
   const toggleExpand = () => {
     setIsExpanded(!isExpanded);
   };
@@ -29,7 +26,7 @@ const SideNav = () => {
           <img src="/images/2.png" alt="company logo" width={120} />
         ) : (
           <>
-            <h1 className="text-lg font-lato-bold">GOGO</h1>
+            <h1 className="font-lato-bold text-lg">GOGO</h1>
             <small className="text-xs">DELIVERY</small>
           </>
         )}
