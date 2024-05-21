@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
+import WeeklyOrdersChart from "./WeeklyOrdersChart/WeeklyOrdersChart";
 
 const WeeklyOrders = () => {
   return (
-    <div>WeeklyOrders</div>
-  )
-}
+    <>
+      <article className="font-lato-bold">
+        <h3 className="font-lato-bold text-gray">PEDIDOS SEMANALES</h3>
+        <p className="font-lato-black text-4xl text-black">5.987,34</p>
+      </article>
 
-export default WeeklyOrders
+      <article className="flex items-center justify-center">
+        <WeeklyOrdersChart />
+      </article>
+    </>
+  );
+};
+
+export default WeeklyOrders;
