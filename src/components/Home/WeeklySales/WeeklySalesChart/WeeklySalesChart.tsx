@@ -50,8 +50,16 @@ const data = {
   ],
 };
 
+const options = {
+  plugins: {
+    legend: {
+      display: false,
+    },
+  },
+};
+
 const WeeklySalesChart = () => {
-  return <Line data={data} />;
+  return <Line data={data} options={options} />;
 };
 
 export default WeeklySalesChart;

@@ -30,7 +30,7 @@ const getRandomData = () => {
 
 // Configuración de datos
 const data = {
-  labels: ["A", "B", "C", "D"],
+  labels: ["Gestión", "Personal", "Logística", "Comisiones"],
   datasets: [
     {
       label: "Datos Aleatorios",
@@ -57,12 +57,15 @@ const options = {
   responsive: true,
   plugins: {
     title: {
-      display: true,
-      text: "Gráfico de Donut con Datos Aleatorios",
+      display: false,
+      text: "Gastos",
     },
     legend: {
       display: true,
       position: "top",
+      labels: {
+        padding: 20,
+      },
     },
     tooltips: {
       enabled: true,

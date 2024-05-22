@@ -9,23 +9,23 @@ import GraphContainer from "@/components/Home/GraphContainer/GraphContainer";
 export default function Home() {
   return (
     <main className="grid-container">
-      <GraphContainer gridArea={"weekly-sales"}>
+      <GraphContainer gridArea="weekly-sales">
         <WeeklySales />
       </GraphContainer>
 
-      <GraphContainer gridArea={"weekly-income"}>
+      <GraphContainer gridArea="weekly-income">
         <WeeklyIncome />
       </GraphContainer>
 
-      <GraphContainer gridArea={"monthly-summary"}>
+      <GraphContainer gridArea="monthly-summary">
         <MonthlySummary />
       </GraphContainer>
 
-      <GraphContainer gridArea={"weekly-orders"}>
+      <GraphContainer gridArea="weekly-orders">
         <WeeklyOrders />
       </GraphContainer>
 
-      <GraphContainer gridArea={"expenses"}>
+      <GraphContainer gridArea="expenses">
         <Expenses />
       </GraphContainer>
     </main>

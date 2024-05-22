@@ -40,12 +40,12 @@ const options = {
   responsive: true,
   plugins: {
     legend: {
-      display: true,
+      display: false,
       position: "top",
     },
     title: {
-      display: true,
-      text: "Ventas semanales",
+      display: false,
+      text: "Beneficio semanal",
     },
   },
 };

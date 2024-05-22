@@ -60,12 +60,12 @@ const options = {
   responsive: true,
   plugins: {
     legend: {
-      display: true,
+      display: false,
       position: "top",
     },
     title: {
-      display: true,
-      text: "Gráfico de Barras con Datos Aleatorios",
+      display: false,
+      text: "Pedidos semanales",
     },
   },
 };
