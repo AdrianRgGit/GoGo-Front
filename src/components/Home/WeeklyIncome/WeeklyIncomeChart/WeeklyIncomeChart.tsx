@@ -26,11 +26,11 @@ const data = {
   datasets: [
     {
       label: "Beneficio semanal",
-      backgroundColor: "rgba(75,192,192,0.4)",
-      borderColor: "rgba(75,192,192,1)",
+      backgroundColor: "#D0FEAF",
+      borderColor: "#D0FEAF",
       borderWidth: 1,
-      hoverBackgroundColor: "rgba(75,192,192,0.6)",
-      hoverBorderColor: "rgba(75,192,192,1)",
+      hoverBackgroundColor: "rgba(208,254,175,0.6)",
+      hoverBorderColor: "rgba(208,254,175,1)",
       data: [65, 59, 80, 81, 56, 55, 40],
     },
   ],
@@ -46,6 +46,18 @@ const options = {
     title: {
       display: false,
       text: "Beneficio semanal",
+    },
+  },
+  scales: {
+    x: {
+      grid: {
+        color: "rgba(143,146,146, 0.1)", // Color de la rejilla del eje x
+      },
+    },
+    y: {
+      grid: {
+        color: "rgba(143,146,146, 0.1)", // Color de la rejilla del eje y
+      },
     },
   },
 };

@@ -28,8 +28,8 @@
 }
 
 :root {
-  --foreground-rgb: 69, 71, 75;
-  --background-start-rgb: 69, 71, 75;
+  --foreground-rgb: 13, 21, 21;
+  --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
   font-family: "Lato-Regular", sans-serif, system-ui;
 }
@@ -37,8 +37,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 69, 71, 75;
-    --background-end-rgb: 69, 71, 75;
+    --background-start-rgb: 13, 21, 21;
+    --background-end-rgb: 13, 21, 21;
     font-family: "Lato-Regular", sans-serif, system-ui;
   }
 }

@@ -10,7 +10,7 @@ import {
   PanelBottom,
   Wrench,
 } from "lucide-react";
-import { sideNavProps } from "@/types/sideNav/sideNavTypes";
+import { sideNavProps } from "@/types/sideNavTypes";
 
 const SideNav = ({ isExpanded, setIsExpanded }: sideNavProps) => {
   const toggleExpand = () => {
@@ -19,7 +19,7 @@ const SideNav = ({ isExpanded, setIsExpanded }: sideNavProps) => {
 
   return (
     <aside
-      className={`fixed left-0 top-0 flex h-screen ${isExpanded ? "w-1/5" : "w-24"} flex-col items-center justify-between bg-dark-green p-6 py-4 transition-all duration-150`}
+      className={`fixed left-0 top-0 flex h-screen ${isExpanded ? "w-1/5" : "w-24"} bg-dark-cyan flex-col items-center justify-between p-6 py-4 transition-all duration-150`}
     >
       <header className="mb-4 flex h-32 w-full flex-col items-center justify-center">
         {isExpanded ? (
@@ -57,7 +57,7 @@ const SideNav = ({ isExpanded, setIsExpanded }: sideNavProps) => {
 
       <button
         onClick={toggleExpand}
-        className="absolute left-full top-1/2 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-dark-green p-2 text-white"
+        className="bg-dark-cyan absolute left-full top-1/2 -translate-x-1/2 -translate-y-1/2 transform rounded-full p-2 text-white"
       >
         {isExpanded ? <ChevronLeft /> : <ChevronRight />}
       </button>

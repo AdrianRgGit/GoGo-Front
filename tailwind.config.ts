@@ -9,9 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "sidenav-gradient":
+          "radial-gradient(circle at 50% 0%, rgba(112, 255, 218, 0.5) 0%, #050B05 30%, #050B05 100%)",
       },
 
       fontFamily: {
@@ -22,10 +21,15 @@ const config: Config = {
       },
 
       colors: {
-        white: "#F5F7F8",
-        yellow: "#F4CE14",
-        "dark-green": "#495E57",
-        gray: "#45474B",
+        white: "#FFFFFF",
+        cyan: "#70FFDA",
+        "dark-cyan": "#172D29",
+        lime: "#D0FEAF",
+        purple: "#D0AFFE",
+        gray: "#8F9292",
+        black1: "#141E1E",
+        black2: "#0D1515",
+        black3: "#050B05",
       },
     },
   },

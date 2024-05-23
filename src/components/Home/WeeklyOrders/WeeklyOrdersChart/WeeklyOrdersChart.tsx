@@ -45,11 +45,11 @@ const data = {
   datasets: [
     {
       label: "Datos Aleatorios",
-      backgroundColor: "rgba(153, 102, 255, 0.6)",
-      borderColor: "rgba(153, 102, 255, 1)",
+      backgroundColor: "#D0AFFE",
+      borderColor: "#D0AFFE",
       borderWidth: 1,
-      hoverBackgroundColor: "rgba(153, 102, 255, 0.8)",
-      hoverBorderColor: "rgba(153, 102, 255, 1)",
+      hoverBackgroundColor: "rgba(208, 175, 254, 0.8)",
+      hoverBorderColor: "rgba(208, 175, 254, 1)",
       data: getRandomData(12),
     },
   ],

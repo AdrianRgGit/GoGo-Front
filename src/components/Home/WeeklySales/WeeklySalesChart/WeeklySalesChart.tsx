@@ -30,18 +30,18 @@ const data = {
       label: "Ventas semanales",
       fill: false,
       lineTension: 0.1,
-      backgroundColor: "rgba(75,192,192,0.4)",
-      borderColor: "rgba(75,192,192,1)",
+      backgroundColor: "#70FFDA",
+      borderColor: "#70FFDA",
       borderCapStyle: "butt",
       borderDash: [],
       borderDashOffset: 0.0,
       borderJoinStyle: "miter",
-      pointBorderColor: "rgba(75,192,192,1)",
+      pointBorderColor: "#70FFDA",
       pointBackgroundColor: "#fff",
       pointBorderWidth: 1,
       pointHoverRadius: 5,
-      pointHoverBackgroundColor: "rgba(75,192,192,1)",
-      pointHoverBorderColor: "rgba(220,220,220,1)",
+      pointHoverBackgroundColor: "#70FFDA",
+      pointHoverBorderColor: "#70FFDA",
       pointHoverBorderWidth: 2,
       pointRadius: 1,
       pointHitRadius: 10,
@@ -54,6 +54,18 @@ const options = {
   plugins: {
     legend: {
       display: false,
+    },
+  },
+  scales: {
+    x: {
+      grid: {
+        color: "rgba(143,146,146, 0.1)", // Color de la rejilla del eje x
+      },
+    },
+    y: {
+      grid: {
+        color: "rgba(143,146,146, 0.1)", // Color de la rejilla del eje y
+      },
     },
   },
 };
