@@ -19,7 +19,7 @@ const SideNav = ({ isExpanded, setIsExpanded }: sideNavProps) => {
 
   return (
     <aside
-      className={`fixed left-0 top-0 flex h-screen ${isExpanded ? "w-1/5" : "w-24"} bg-dark-cyan flex-col items-center justify-between p-6 py-4 transition-all duration-150`}
+      className={`fixed left-0 top-0 flex h-screen ${isExpanded ? "w-1/5" : "w-24"} flex-col items-center justify-between bg-dark-cyan p-6 py-4 transition-all duration-150`}
     >
       <header className="mb-4 flex h-32 w-full flex-col items-center justify-center">
         {isExpanded ? (
@@ -38,26 +38,26 @@ const SideNav = ({ isExpanded, setIsExpanded }: sideNavProps) => {
       <nav
         className={`flex w-full flex-col justify-center gap-y-10 ${!isExpanded && "items-center"}`}
       >
-        <TabNav href="#" icon={<Home size={28} />} expanded={isExpanded}>
+        <TabNav href="/" icon={<Home size={28} />} expanded={isExpanded}>
           INICIO
         </TabNav>
-        <TabNav href="#" icon={<PanelBottom size={28} />} expanded={isExpanded}>
+        <TabNav href="/" icon={<PanelBottom size={28} />} expanded={isExpanded}>
           PANEL DE CONTROL
         </TabNav>
-        <TabNav href="#" icon={<Wrench size={28} />} expanded={isExpanded}>
+        <TabNav href="/" icon={<Wrench size={28} />} expanded={isExpanded}>
           FUNCIONALIDADES
         </TabNav>
-        <TabNav href="#" icon={<Bell size={28} />} expanded={isExpanded}>
+        <TabNav href="/" icon={<Bell size={28} />} expanded={isExpanded}>
           NOTIFICACIONES
         </TabNav>
-        <TabNav href="#" icon={<HelpCircle size={28} />} expanded={isExpanded}>
+        <TabNav href="/auth" icon={<HelpCircle size={28} />} expanded={isExpanded}>
           SOPORTE
         </TabNav>
       </nav>
 
       <button
         onClick={toggleExpand}
-        className="bg-dark-cyan absolute left-full top-1/2 -translate-x-1/2 -translate-y-1/2 transform rounded-full p-2 text-white"
+        className="absolute left-full top-1/2 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-dark-cyan p-2 text-white"
       >
         {isExpanded ? <ChevronLeft /> : <ChevronRight />}
       </button>

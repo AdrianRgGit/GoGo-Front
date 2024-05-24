@@ -1,9 +1,10 @@
 import { profileNavProps } from "@/types/sideNavTypes";
+import Link from "next/link";
 import React from "react";
 
 const ProfileNav = ({ expanded }: profileNavProps) => {
   return (
-    <a className="flex items-center justify-center gap-x-6" href="#">
+    <Link className="flex items-center justify-center gap-x-6" href="/profile">
       <img
         className="rounded-full"
         width={64}
@@ -18,7 +19,7 @@ const ProfileNav = ({ expanded }: profileNavProps) => {
           <p className="text-xs">Rol</p>
         </div>
       )}
-    </a>
+    </Link>
   );
 };
 
